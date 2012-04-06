@@ -1,6 +1,15 @@
-name: Poll
-description: Poll plugin
+{
+	"name": "Poll",
+	"description": "Create polls",
 
-author: Primeminister
-authorEmail: author@example.com
-authorUrl: http://example.com
+	"author": "Michal Sudwoj",
+	"authorEmail": "mswoj61@gmail.com",
+	"authorUrl": "",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions"
+			]
+		}
+}

@@ -5,12 +5,7 @@
     if ($block['Block']['class'] != null) {
         $class .= ' ' . $b['class'];
     }
-?>
-<div id="block-<?php echo $b['id']; ?>" class="<?php echo $class; ?>">
-	
-		<?php if ($b['show_title'] == 1) { ?>
-			<h3><?php echo $b['title']; ?></h3>					
-		<?php } ?>       					
+?>      					
 			<div class="block-body <?php echo $class; ?>">
 				<?php $poll = $polls_for_layout; ?>
 		
@@ -45,8 +40,7 @@
 		      //  ));
 		       echo $this->Form->end(__('Vote'));
 		    ?>			
-		</div>    				
-</div>
+		</div>
 <?
 }
 ?>

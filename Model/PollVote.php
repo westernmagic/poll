@@ -22,7 +22,7 @@ class PollVote extends PollAppModel {
  */
     var $name = 'PollVote';
 
-	var $useDbConfig = 'polling';
+	//var $useDbConfig = 'polling';
 	
 	var $validate = array(
         'vote' => array(

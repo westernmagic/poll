@@ -54,7 +54,7 @@ class PollActivation {
             'status' => 0,
         ));
 		
-		$sql = file_get_contents(APP.'plugins'.DS.'poll'.DS.'config'.DS.'poll.sql');
+		$sql = file_get_contents( App::path( 'config' , 'Poll' ) . DS . 'poll.sql' ) ;
         if(!empty($sql)){
         	App::import('Core', 'File');
         	App::import('Model', 'ConnectionManager');

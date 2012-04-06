@@ -29,6 +29,23 @@
  * This plugin's admin_menu element will be rendered in admin panel under Extensions menu.
  */
     Croogo::hookAdminMenu('Poll');
+	CroogoNav::add('extensions.children.poll', array(
+        'title' => __('Poll'),
+        'url' => '#',
+        'access' => array('admin'),
+        'children' => array(
+            'example1' => array(
+                'title' => __('List'),
+                'url' => array('plugin' => 'poll', 'controller' => 'polls', 'action' => 'index'),
+                'access' => array('admin'),
+            ),
+            'example2' => array(
+                'title' => __('New Poll'),
+                'url' => array('plugin' => 'poll', 'controller' => 'polls', 'action' => 'add'),
+                'access' => array('admin'),
+            ),
+        ),
+    ));
 /**
  * Admin row action
  *

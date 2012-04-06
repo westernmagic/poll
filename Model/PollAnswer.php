@@ -22,7 +22,7 @@ class PollAnswer extends PollAppModel {
  */
     var $name = 'PollAnswer';
 
-	var $useDbConfig = 'polling';
+	//var $useDbConfig = 'polling';
 	
 	var $actsAs = array(
         'Tree'

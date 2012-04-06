@@ -12,7 +12,7 @@ class PollLog extends PollAppModel {
  *
  * @var string
  */
-	public $useDbConfig = 'polling';
+	//public $useDbConfig = 'polling';
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
